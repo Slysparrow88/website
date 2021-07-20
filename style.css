@@ -8,7 +8,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    transition: 1s
+    transition: .5s;
 }
 
 #mast-down {
@@ -17,8 +17,9 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    transition: 1s;
+    transition: .5s;
     box-shadow: 0 3px 12px rgb(0 0 0 / 10%), 0 6px 10px rgb(0 0 0 / 8%);
+    z-index: 1000;
 }
 
 /*menu overlay*/
@@ -54,6 +55,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 3.75rem;
     margin: auto;
     color: #fff;
@@ -95,7 +97,6 @@ h1 {
     top: 1px;
     width: 42px;
     height: 42px;
-    /* filter: drop-shadow(0 0 1px #E8B370) */
 }
 
 #img-menu-open {
@@ -121,7 +122,7 @@ h1 {
     animation: 0.5s linear openMenu;
     animation-fill-mode: both;
     background-color: #000;
-    z-index: 1001 !important;
+    z-index: 1000;
 }
 
 .shape-closed {
@@ -207,21 +208,24 @@ ul:hover {
     margin-top: 50px;
     margin-bottom: 150px;
 }
-.nature{
-    margin-top: 150px;
-    margin-bottom: 100px;
+
+.nature {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 170, 65, 0.7);
     text-align: center;
     font-size: 2.75rem;
     margin: auto;
     color: #444444;
-    font-family: "Rozha One", serif; 
+    font-family: "Rozha One", serif;
+    z-index: 10
 }
 
 .anim-img {
-    width: 500px;
-    height: 300px;
+    width: 40%;
+    height: 500px;
     filter: grayscale(100%);
     cursor: pointer;
+    border: 15px solid #E8B370;
 }
 
 .anim-img:hover {
@@ -229,14 +233,14 @@ ul:hover {
     animation-fill-mode: both;
 }
 
-.anim-img p {
+.anim-img p {    
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 2.4rem;
     font-family: Georgia, serif;
     position: absolute;
-    width: 500px;
+    width: 100%;
     color: #fff;
     z-index: 98;
     top: 60%;
@@ -245,33 +249,68 @@ ul:hover {
 }
 
 .anim-img:hover p {
-    background: rgba(255, 170, 65, 0.5);
+    background: rgba(255, 170, 65, 0.7);
     transition: .6s;
 }
 
 #img-right {
-    background: url('https://lh3.googleusercontent.com/proxy/v_rw7T_Ajrv2Vs0oFuXmW0Fzzt8FPbsZBlzjvIc98xhWQLcoePJoP8wFnsqXddwi_pm_S_pQVcm7tXQko_MQRIYf8f4h0MQpm7vX7UTJtsAfUrJTgRODiXwEiVByUtAhI9h3CArOWa86wPy8CQ');
+    background: url('./img/mount1.jpg');
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
 }
 
 #img-left {
-    background: url('https://lh3.googleusercontent.com/proxy/Mcau9YBQHZ0TIxiO1Ypc89ejcdjn79ZUPNTpgiiTiLgmFnycDVj2QPvCJ3DinD5TJkE4EYoegDktdZvqKT773rPkDSb6svv1FZ2i01nIGw4qx2PD2NNaFT5UCw27S_yLHfeVyiSFlgYcU0poJA');
+    background: url('./img/mount2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #img-right-turn {
-    background: url('https://lh3.googleusercontent.com/proxy/REjYRuRUTmji133ehwbiiG7uhIxZ16IHdSfKrbEhs8LCUrFTkx9zT2Ix7Qm6KsKW2EzlQwClEGePo9N_QR0CohkG0JT3LQFlCuFZLlCpsl77vnLUrfeIrxu6dluA6j7a6A-SJsKpkpE0');
+    background: url('./img/ocean1.jpg');
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
 }
 
 #img-left-turn {
-    background: url('https://look.com.ua/pic/201712/1920x1080/look.com.ua-261700.jpg');
+    background: url('./img/ocean2.jpg');
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
 }
+
+/*footer*/
+
+footer {
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+}
+
+footer div {
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    color: #E8B370;
+    font-size: 2rem;
+    display: block;
+    animation: 0.5s linear showInfo;
+    animation-fill-mode: both;
+}
+
+.info p {
+    margin: 30px 0;
+    font-family: "PantReg", Helvetica, sans-serif;
+}
+
+#resourses a {
+    text-decoration: none;
+    color: #E8B370;
+}
+
 /*animations*/
 
 @keyframes grayscaleModeOff {
