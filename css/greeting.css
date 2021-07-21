@@ -1,0 +1,33 @@
+/*greeting*/
+
+.greeting {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.subsection {
+    text-align: center;
+    color: #444444;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 1px solid #999999;
+    font-size: 1.5rem;
+    line-height: 1.55;
+    letter-spacing: 2px;
+    font-family: "PantReg", Helvetica, sans-serif;
+}
+
+.greeting h3 {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.mar {
+    color: #444444;
+}

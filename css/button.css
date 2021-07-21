@@ -1,0 +1,44 @@
+/*button*/
+
+.menu-button {
+    position: absolute;
+    border-radius: 50%;
+    left: 90%;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30, 30, 30);
+}
+
+.menu-button button {
+    top: -5px;
+    left: -3px;
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.menu-button button:hover {
+    box-shadow: 0px 0px 15px 10px #E8B370;
+    box-shadow: inset 0px 0px 10px 2px #E8B370;
+    animation: 0.3s linear borderRadius;
+}
+
+#img-menu {
+    position: relative;
+    top: 1px;
+    width: 42px;
+    height: 42px;
+}
+
+#img-menu-open {
+    position: relative;
+    top: 1px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+}

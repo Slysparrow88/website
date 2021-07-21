@@ -1,0 +1,100 @@
+/*animations*/
+
+@keyframes grayscaleModeOff {
+    0% {
+        filter: grayscale(100%);
+    }
+    25% {
+        filter: grayscale(75%);
+    }
+    50% {
+        filter: grayscale(50%);
+    }
+    75% {
+        filter: grayscale(25%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+
+@keyframes borderRadius {
+    0% {
+        box-shadow: 0px 0px 0px 1px #E8B370;
+    }
+    100% {
+        box-shadow: 0px 0px 6px 4px #E8B370;
+    }
+}
+
+@keyframes openMenu {
+    0% {
+        height: 0px;
+    }
+    25% {
+        height: 142px;
+    }
+    50% {
+        height: 284px;
+    }
+    75% {
+        height: 426px;
+    }
+    100% {
+        height: 570px;
+    }
+}
+
+@keyframes closedMenu {
+    0% {
+        height: 570px;
+    }
+    25% {
+        height: 426px;
+    }
+    50% {
+        height: 284px;
+    }
+    75% {
+        height: 142px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes showMenuList {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
