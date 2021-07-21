@@ -1,0 +1,11 @@
+@import 'font.css';
+@import 'menu-overlay.css';
+@import 'button.css';
+@import 'modal-window.css';
+@import 'greeting.css';
+@import 'content.css';
+@import 'footer.css';
+@import 'animations.css';
+body {
+    margin: 0;
+}

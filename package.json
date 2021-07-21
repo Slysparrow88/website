@@ -1,0 +1,26 @@
+{
+  "name": "website-webpack",
+  "version": "1.0.0",
+  "description": "trial site with webpack",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slysparrow88/website.git"
+  },
+  "author": "Vitalii Pavlenko pavlenkovitalii88@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slysparrow88/website/issues"
+  },
+  "homepage": "https://github.com/Slysparrow88/website#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
