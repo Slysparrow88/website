@@ -3,9 +3,22 @@
 @import 'button.css';
 @import 'modal-window.css';
 @import 'greeting.css';
-@import 'content.css';
+@import 'white-content.css';
+@import 'black-content.css';
 @import 'footer.css';
 @import 'animations.css';
 body {
     margin: 0;
+}
+#app{
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    transition: 1s;
+}
+#app-black{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    transition: 1s;
 }

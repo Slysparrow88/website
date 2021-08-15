@@ -1,0 +1,97 @@
+#city {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 170, 65, 0.7);
+    text-align: center;
+    font-size: 2.75rem;
+    margin: auto;
+    color: #444444;
+    font-family: "Rozha One", serif;
+    z-index: 10;
+    transition: 1s;
+}
+
+#city-black {
+    position: relative;
+    border-bottom: 1px solid #8B00ff80;
+    text-align: center;
+    font-size: 2.75rem;
+    margin: auto;
+    color: #fff;
+    font-family: "Rozha One", serif;
+    z-index: 10;
+    transition: 1s;
+}
+.text-city {
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 45%;
+    height: 400px;
+    color: #fff;
+}
+
+.text-city p {
+    text-align: left;
+    line-height: 2.5;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+}
+.anim-img-city:hover {
+    animation: .5s linear grayscaleModeOff;
+    animation-fill-mode: both;
+}
+
+.anim-img-city p {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.8rem;
+    font-family: Georgia, serif;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    z-index: 98;
+    top: 70%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.anim-img-city:hover p {
+    background: #8c00ff80;
+    transition: .6s;
+}
+
+#img-city-london {
+    background: url('../img/london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5%;
+    width: 45%;
+    height: 450px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    border: 10px solid #8B00ff;
+}
+#img-city-tokyo {
+    background: url('../img/tokyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    width: 45%;
+    height: 450px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    border: 10px solid #8B00ff;
+}
+#img-city-new_york{
+    background: url('../img/new_york.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5%;
+    width: 45%;
+    height: 450px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    border: 10px solid #8B00ff;
+} 
+

@@ -14,6 +14,7 @@
     animation-fill-mode: both;
     background-color: #000;
     z-index: 1000;
+    /* border-bottom: 15px solid #E8B370; */
 }
 
 .shape-closed {
@@ -21,6 +22,7 @@
     animation: 0.5s linear closedMenu;
     animation-fill-mode: both;
     background-color: #000;
+    /* border-bottom: 15px solid #E8B370; */
 }
 
 ul {
@@ -30,6 +32,10 @@ ul {
     margin: 0 30%;
     padding: 0;
     top: 100px;
+}
+ul li {
+    margin: auto;
+    width: 315px;
 }
 
 .list {
