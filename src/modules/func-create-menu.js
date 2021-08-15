@@ -14,13 +14,42 @@ export default function createMenu() {
                 a.className = 'list';
                 a.innerHTML = element;
                 if (a.textContent === 'Home') {
-                    a.id = 'home';
+                    a.onclick = () => {
+                        document.querySelector('.container').scrollIntoView({ block: "center", behavior: "smooth" });
+                        ul.innerHTML = '';
+                        imgMenu.alt = 'close';
+                        imgMenu.id = 'img-menu';
+                        imgMenu.src = '../src/img/par_wt_b.png';
+                        shape.className = 'shape-closed';
+                    }
                 } else if (a.textContent === 'Mountains') {
-                    a.id = 'mountains';
+                    a.onclick = () => {
+                        document.querySelector('#heading-mountains').scrollIntoView({ block: "center", behavior: "smooth" });
+                        ul.innerHTML = '';
+                        imgMenu.alt = 'close';
+                        imgMenu.id = 'img-menu';
+                        imgMenu.src = '../src/img/par_wt_b.png';
+                        shape.className = 'shape-closed';
+                    }
+
                 } else if (a.textContent === 'Oceans') {
-                    a.id = 'oceans';
+                    a.onclick = () => {
+                        document.querySelector('#heading-oceans').scrollIntoView({ block: "center", behavior: "smooth" });
+                        ul.innerHTML = '';
+                        imgMenu.alt = 'close';
+                        imgMenu.id = 'img-menu';
+                        imgMenu.src = '../src/img/par_wt_b.png';
+                        shape.className = 'shape-closed';
+                    }
                 } else if (a.textContent === 'Night cities') {
-                    a.id = 'night_cities';
+                    a.onclick = () => {
+                        document.querySelector('#city').scrollIntoView({ block: "center", behavior: "smooth" });
+                        ul.innerHTML = '';
+                        imgMenu.alt = 'close';
+                        imgMenu.id = 'img-menu';
+                        imgMenu.src = '../src/img/par_wt_b.png';
+                        shape.className = 'shape-closed';
+                    }
                 }
 
                 li.append(a);

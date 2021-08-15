@@ -7,7 +7,7 @@ export default function changeColorSide() {
 
         // console.log(window.pageYOffset);
 
-        if (window.pageYOffset > 2000) {
+        if (window.pageYOffset > 1900) {
             document.querySelector('section').id = 'mast-black';
 
             document.querySelector('.text-city').style.color = '#fff';
@@ -16,7 +16,7 @@ export default function changeColorSide() {
             if (imgMenu.alt === 'close') {
                 document.querySelector('#btn-menu').style.background = '#8B00ff';
             }
-        } else if (window.pageYOffset < 2000 && window.pageYOffset > 500) {
+        } else if (window.pageYOffset < 1900 && window.pageYOffset > 500) {
 
             document.querySelector('.text-city').style.color = '#000';
             document.querySelector('section').id = 'mast-down';
