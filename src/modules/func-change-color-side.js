@@ -3,9 +3,7 @@ export default function changeColorSide() {
     const side = document.querySelector('#app');
     const gritCity = document.querySelector('#city');
 
-    window.addEventListener('scroll', function () {
-
-        // console.log(window.pageYOffset);
+    window.addEventListener('scroll', function () {        
 
         if (window.pageYOffset > 1900) {
             document.querySelector('section').id = 'mast-black';

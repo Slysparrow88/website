@@ -1,3 +1,5 @@
+import { searchScroll, open, close } from './func-search-scroll.js';
+
 export default function createMenu() {
     const imgMenu = document.querySelector('#img-menu');
     const shape = document.querySelector('.shape');
@@ -6,74 +8,38 @@ export default function createMenu() {
     document.querySelector('#btn-menu').onclick = () => {
 
         function showMenu() {
-            const array = ['Home', 'Mountains', 'Oceans', 'Night cities'];
+
+            const array = ['Home', 'Mountains', 'Oceans', 'Night cities', 'Contacts'];
             array.forEach(element => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
-
                 a.className = 'list';
                 a.innerHTML = element;
+
                 if (a.textContent === 'Home') {
-                    a.onclick = () => {
-                        document.querySelector('.container').scrollIntoView({ block: "center", behavior: "smooth" });
-                        ul.innerHTML = '';
-                        imgMenu.alt = 'close';
-                        imgMenu.id = 'img-menu';
-                        imgMenu.src = '../src/img/par_wt_b.png';
-                        shape.className = 'shape-closed';
-                    }
+                    searchScroll(a, document.querySelector('.container'), ul, imgMenu, shape);
                 } else if (a.textContent === 'Mountains') {
-                    a.onclick = () => {
-                        document.querySelector('#heading-mountains').scrollIntoView({ block: "center", behavior: "smooth" });
-                        ul.innerHTML = '';
-                        imgMenu.alt = 'close';
-                        imgMenu.id = 'img-menu';
-                        imgMenu.src = '../src/img/par_wt_b.png';
-                        shape.className = 'shape-closed';
-                    }
-
+                    searchScroll(a, document.querySelector('#heading-mountains'), ul, imgMenu, shape);
                 } else if (a.textContent === 'Oceans') {
-                    a.onclick = () => {
-                        document.querySelector('#heading-oceans').scrollIntoView({ block: "center", behavior: "smooth" });
-                        ul.innerHTML = '';
-                        imgMenu.alt = 'close';
-                        imgMenu.id = 'img-menu';
-                        imgMenu.src = '../src/img/par_wt_b.png';
-                        shape.className = 'shape-closed';
-                    }
+                    searchScroll(a, document.querySelector('#heading-oceans'), ul, imgMenu, shape);
                 } else if (a.textContent === 'Night cities') {
-                    a.onclick = () => {
-                        document.querySelector('#city').scrollIntoView({ block: "center", behavior: "smooth" });
-                        ul.innerHTML = '';
-                        imgMenu.alt = 'close';
-                        imgMenu.id = 'img-menu';
-                        imgMenu.src = '../src/img/par_wt_b.png';
-                        shape.className = 'shape-closed';
-                    }
+                    searchScroll(a, document.querySelector('#city'), ul, imgMenu, shape);
+                } else if (a.textContent === 'Contacts') {
+                    searchScroll(a, document.querySelector('footer'), ul, imgMenu, shape);
                 }
-
                 li.append(a);
                 ul.append(li);
                 ul.style.display = 'block';
-
             });
             shape.append(ul);
-        }
+        };
 
         if (imgMenu.alt === 'close') {
-            document.querySelector('.menu-button button').style.background = '#000';
-            imgMenu.alt = 'open';
-            imgMenu.id = 'img-menu-open';
-            imgMenu.src = '../src/img/cross_wt.png';
-            shape.className = 'shape-open';
+            open(imgMenu, shape);
             setTimeout(() => { showMenu() }, 500);
-        } else if (imgMenu.alt === 'open') {
-            ul.innerHTML = '';
-            imgMenu.alt = 'close';
-            imgMenu.id = 'img-menu';
-            imgMenu.src = '../src/img/par_wt_b.png';
-            shape.className = 'shape-closed';
 
+        } else if (imgMenu.alt === 'open') {
+            close(ul, imgMenu, shape);
             setTimeout(() => {
                 shape.className = 'shape';
                 if (document.querySelector('section').id === 'mast') {
