@@ -7,6 +7,8 @@
 @import 'black-content.css';
 @import 'footer.css';
 @import 'animations.css';
+@import 'adaptation.css';
+
 body {
     margin: 0;
 }

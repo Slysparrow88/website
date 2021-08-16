@@ -23,7 +23,7 @@ export default function createMenu() {
                 } else if (a.textContent === 'Oceans') {
                     searchScroll(a, document.querySelector('#heading-oceans'), ul, imgMenu, shape);
                 } else if (a.textContent === 'Night cities') {
-                    searchScroll(a, document.querySelector('#city'), ul, imgMenu, shape);
+                    searchScroll(a, document.querySelector('.city'), ul, imgMenu, shape);
                 } else if (a.textContent === 'Contacts') {
                     searchScroll(a, document.querySelector('footer'), ul, imgMenu, shape);
                 }

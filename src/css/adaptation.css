@@ -1,0 +1,108 @@
+@media (max-width: 1335px) {
+    .text-city p {
+        font-size: 2rem;
+        line-height: 1.8
+    }
+    .anim-img-city p {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        padding-top: 150px;
+    }
+    .text-city p {
+        font-size: 1.8rem;
+        line-height: 1.7
+    }
+    .anim-img-city {
+        height: 350px;
+    }
+    .anim-img-city p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    #first-conteiner, #second-conteiner {
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .anim-img {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .anim-img-city {
+        height: 300px;
+    }
+    .anim-img p {
+        font-size: 2rem;
+    }
+    .anim-img-city p {
+        font-size: 1.7rem;       
+    }
+    .text-city {
+        height: 300px;
+    }
+    .text-city p {
+        font-size: 1.7rem;
+        line-height: 1.6
+    }
+}
+
+@media (max-width: 860px) {
+    .interior-container h1 {
+        font-size: 3rem;
+    }
+    .container {
+        padding-top: 170px;
+    }
+    .greeting {
+        margin-bottom: 70px;
+    }
+    .greeting h1 {
+        font-size: 3rem;
+    }
+    .greeting h3 {
+        font-size: 1.2rem;
+    }
+    .nature, #city {
+        font-size: 2.2rem;
+    }
+    #heading-oceans, #city, #city-black {
+        margin-top: 60px;
+    }
+    .anim-img p, .anim-img-city p {
+        font-size: 1.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .text-city {
+        height: 300px;
+    }
+    .text-city p {
+        font-size: 1.3rem;
+        line-height: 1.5
+    }
+    .anim-img, .anim-img-city {
+        height: 250px;
+    }
+    .content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer div {
+        display: block;
+    }
+    .info {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    #contact {
+        padding-top: 20px;
+    }
+    .subsection {        
+        margin-top: 35px;       
+    }
+}
